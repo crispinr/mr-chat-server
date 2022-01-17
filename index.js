@@ -11,7 +11,7 @@ const PORT = process.env.PORT;
 
 const io = new Server(server, {
   cors: {
-    origin: "https://mr-chat-client.herokuapp.com",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
